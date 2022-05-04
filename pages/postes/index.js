@@ -4,11 +4,11 @@ const postes = (props) => {
     return (
         <div>
             <h1>Postes</h1>
-            {props.postes.map((post) =>(
+            {props.postes.map((post) => (
                 <div key={Math.random()}>
-                <Link href={`http://localhost:3000/api/posts/${post.id}`}>
-                    <h3>{post.title}</h3>
-                </Link>
+                    <Link href={`http://localhost:3000/api/posts/${post.id}`}>
+                        <h3>{post.title}</h3>
+                    </Link>
                 </div>
             ))}
         </div>
@@ -17,13 +17,13 @@ const postes = (props) => {
 
 export default postes
 
-export async function getStaticProps(){
+export async function getStaticProps() {
     const res = await fetch('http://localhost:3000/api/posts')
-    const data =await res.json()
+    const data = await res.json()
 
-    return{
-        props:{
-            postes:data
+    return {
+        props: {
+            postes: data
         }
     }
 }
