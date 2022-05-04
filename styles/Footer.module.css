@@ -1,0 +1,7 @@
+.footersection{
+    background-color: rgb(168, 164, 164);
+    padding:6px 8px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}

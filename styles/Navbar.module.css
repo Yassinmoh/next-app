@@ -1,0 +1,13 @@
+.bg{
+    display:flex;
+    flex-direction:row;
+    background-color:yellowgreen;
+    padding:10px 20px;
+    justify-content:center;
+    align-items:center;
+}
+.bg span{
+    padding:0px 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
